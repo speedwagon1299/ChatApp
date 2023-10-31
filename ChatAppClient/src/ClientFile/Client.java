@@ -39,10 +39,9 @@ public class Client
             {
                 while(socket.isConnected())
                 {
-                    String messageFromServer;
                     try 
                     {
-                        messageFromServer = bufferedReader.readLine();
+                        String messageFromServer = bufferedReader.readLine();
                         Controller.addLabel(messageFromServer, vbox);
                     } 
                     catch (IOException e) 

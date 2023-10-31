@@ -17,7 +17,6 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 
@@ -79,12 +78,12 @@ public class Controller implements Initializable
                     Text text = new Text(messageToSend);        //Converting to Text format
                     TextFlow textFlow = new TextFlow(text);     //Wrapping functionality to make long texts readable
 
-                    textFlow.setStyle("-fx-color: rgb(239,242,255)" + 
-                                      "-fx-background_color: rgb(15,125,242)" +
-                                      "-fx-background-radius: 20px");
+                    textFlow.setStyle(//"-fx-text-fill: rgb(239,242,255);" + 
+                                      "-fx-background_color: rgb(15,125,242);" +
+                                      "-fx-background-radius: 20px;");
 
                     textFlow.setPadding(new Insets(5,10,5,10));     //t,r,b,l
-                    text.setFill(Color.color(0.934,0.945,0.96));
+                    // text.setFill(Color.color(0.934,0.945,0.96));
 
                     hbox.getChildren().add(textFlow);       //Add entered text to textbox
                     past_messages.getChildren().add(hbox);   //Add textbox to the vbox

@@ -13,7 +13,6 @@ public class App extends Application
         try 
         {
             Parent root = FXMLLoader.load(getClass().getResource("control.fxml"));
-            System.out.println("hi");
             primaryStage.setTitle("Server");
             primaryStage.setScene(new Scene(root, 478, 396));
             primaryStage.show();
