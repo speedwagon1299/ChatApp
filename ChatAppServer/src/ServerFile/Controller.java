@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import Exceptions.MessageLengthExceededException;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -124,7 +123,7 @@ public class Controller implements Initializable
 
         Text text = new Text(messageFromClient);
         TextFlow textFlow = new TextFlow(text);
-        textFlow.setStyle("-fx-background-color: rgb(233,233,235);" +    //Default black text colour
+        textFlow.setStyle("-fx-background-color: rgb(233,233,235);" +    //Default white text colour
                           "-fx-background-radius: 20px;");
         textFlow.setPadding(new Insets(5,10,5,10));
         hbox.getChildren().add(textFlow);
